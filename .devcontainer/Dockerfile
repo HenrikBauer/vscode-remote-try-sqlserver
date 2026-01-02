@@ -1,6 +1,6 @@
 # [Choice] .NET version: 6.0-focal, 3.1-focal
-ARG VARIANT="6.0-focal"
-FROM mcr.microsoft.com/devcontainers/dotnet:0-${VARIANT}
+ARG VARIANT="0-6.0-focal"
+FROM mcr.microsoft.com/devcontainers/dotnet:${VARIANT}
 
 # Add .NET global tools path
 ENV PATH $PATH:/home/vscode/.dotnet:/home/vscode/.dotnet/tools
